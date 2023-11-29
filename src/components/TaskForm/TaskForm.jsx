@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { CgAddR } from "react-icons/cg";
 import "./TaskForm.css"
 const TaskForm = ({addTask}) => {
     const [openModal, setOpenModal] = useState(false);
@@ -22,25 +23,24 @@ const TaskForm = ({addTask}) => {
     }
   return (
     <div>
-        <button onClick={handleOpenModal}>Nueva Tarea</button>
+        <button onClick={handleOpenModal} className='btnAgregar'><CgAddR /> Agregar</button>
             {
                 openModal
                 &&
                 <div className='modal-bg'>
                     <div className='modal'>
                         <h2>Agregar Nueva Tarea</h2>
+                            <br />
                             <form onSubmit={handleAddTask}>
                                 <div className='input-cont'>
-                                    <label htmlFor="title">Ingresa el Título de la Tarea</label>
-                                    <input type="text" id='title' name='title'placeholder='Titulo de la tarea'/>
+                                    <input type="text" id='title' name='title' placeholder='Título de la tarea'/>
                                 </div>
                                 <div className='input-cont'>
-                                    <label htmlFor="description">Ingresa la descripción de la tarea</label>
-                                    <textarea id='description' name='description' placeholder='Descripcion de la tarea'></textarea>
+                                    <textarea id='description' name='description' placeholder='Descripción de la tarea'></textarea>
                                 </div>   
                                 <div className='btn-cont'>
-                                    <button onClick={handleCloseModal}>Cancelar</button>
-                                    <button type='submit'>Agregar Tarea</button>
+                                    <button onClick={handleCloseModal} className='btnModal'>Cancelar</button>
+                                    <button type='submit' className='btnModal'>Agregar Tarea</button>
                                 </div>                     
                             </form>
                     </div>

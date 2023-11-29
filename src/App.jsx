@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import { TaskForm, TaskList } from './components'
+import Header from './components/Header/Header';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -24,11 +25,16 @@ function App() {
   }, [searchString, tasks])
   return (
     <>
-      <div className='controls'>
-        <input type="text" placeholder='escribe el nombre o descripción' value={searchString} onChange={handleChangeSearch}/>
-        <TaskForm addTask={addTask}/>
+      <div className='container'>
+        <div className='main'>
+          <Header />
+          <div className='controls'>
+            <input type="text" placeholder='Busca por nombre o descripción' value={searchString} onChange={handleChangeSearch}/>
+            <TaskForm addTask={addTask}/>
+          </div>
+          <TaskList tasks={searchedTasks} deleteTask={deleteTask}/>
+        </div>
       </div>
-      <TaskList tasks={searchedTasks} deleteTask={deleteTask}/>
     </>
   )
 }

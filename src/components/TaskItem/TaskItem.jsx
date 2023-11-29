@@ -1,14 +1,21 @@
 import React from 'react'
-
+import "./TaskItem.css"
+import { MdFileDownloadDone } from "react-icons/md";
 const TaskItem = ({task, deleteTask}) => {
   
   return (
-    <div>
-        <h3>Titulo: {task.title}</h3>
-        <p>Descripcion: {task.description}</p>
-        <span> Fecha de creación: {task.date}</span>
-        <button onClick={() => deleteTask(task.id)}>Finalizar</button>
-        <hr />
+    <div className='taskContainer'>
+      <div className='taskDetails'>
+        <h3>{task.title}</h3>
+        <br />
+        <p>{task.description}</p>
+        <br />
+        <span>{task.date}</span>
+        <br />
+      </div>
+      <div>
+        <button onClick={() => deleteTask(task.id)} className='btnFinish'><MdFileDownloadDone /> Finalizar Tarea</button> 
+      </div>
     </div>
   )
 }
