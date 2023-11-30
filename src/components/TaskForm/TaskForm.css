@@ -1,5 +1,6 @@
 
 .btnAgregar {
+    color: #fff;
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -7,6 +8,18 @@
     width: 100%;
     height: auto;
     font-size: 18px;
+}
+.btnBlueBg {
+    background-color: rgb(42, 42, 248);
+}
+.btnBlueBg:hover {
+    background-color: rgb(26, 2, 123);
+}
+.btnVioletBg {
+    background-color: rgb(144, 0, 240);
+}
+.btnVioletBg:hover {
+    background-color: rgb(77, 3, 126);
 }
 .modal-bg {
     position: absolute;
@@ -50,8 +63,10 @@
     justify-content: space-between;
 }
 .btnModal {
+    color: #fff;
     padding: 5px;
     border-radius: 5px;
     height: auto;
     font-size: 1rem;
 }
+

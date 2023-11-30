@@ -7,7 +7,7 @@ const TaskList = ({tasks, deleteTask}) => {
     <div className='tasklist'>
         {
             tasks.length == 0
-            ? <h2>Aún no has ingresado tareas</h2>
+            ? <h2 className='whitouthTask'>Aún no has ingresado tareas!</h2>
             : tasks.map(task =>(
               <TaskItem task={task} key={task.id} deleteTask={deleteTask}/>
             ))

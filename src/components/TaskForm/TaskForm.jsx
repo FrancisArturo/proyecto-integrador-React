@@ -23,7 +23,7 @@ const TaskForm = ({addTask}) => {
     }
   return (
     <div>
-        <button onClick={handleOpenModal} className='btnAgregar'><CgAddR /> Agregar</button>
+        <button onClick={handleOpenModal} className='btnAgregar btnBlueBg'><CgAddR /> Agregar</button>
             {
                 openModal
                 &&
@@ -39,8 +39,8 @@ const TaskForm = ({addTask}) => {
                                     <textarea id='description' name='description' placeholder='Descripción de la tarea'></textarea>
                                 </div>   
                                 <div className='btn-cont'>
-                                    <button onClick={handleCloseModal} className='btnModal'>Cancelar</button>
-                                    <button type='submit' className='btnModal'>Agregar Tarea</button>
+                                    <button onClick={handleCloseModal} className='btnModal btnVioletBg'>Cancelar</button>
+                                    <button type='submit' className='btnModal btnBlueBg'>Agregar Tarea</button>
                                 </div>                     
                             </form>
                     </div>
