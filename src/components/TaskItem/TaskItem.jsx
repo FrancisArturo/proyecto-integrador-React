@@ -14,7 +14,10 @@ const TaskItem = ({task, deleteTask}) => {
         <br />
       </div>
       <div>
-        <button onClick={() => deleteTask(task.id)} className='btnFinish btnVioletBg'><MdFileDownloadDone /> Finalizar Tarea</button> 
+        <button onClick={() => deleteTask(task.id)} className='btnFinish btnVioletBg'>
+          <MdFileDownloadDone />
+          <span className='spanBtn'>Finalizar</span>
+        </button> 
       </div>
     </div>
   )

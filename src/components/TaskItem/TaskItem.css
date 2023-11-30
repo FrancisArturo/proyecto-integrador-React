@@ -23,3 +23,12 @@
 .taskDetails {
     max-width: 65%;
 }
+
+@media (max-width: 576px) {
+    .btnFinish {
+        font-size: .8rem;
+    }
+    .taskContainer{
+        font-size: .8rem;
+    }
+}

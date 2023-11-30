@@ -69,4 +69,31 @@
     height: auto;
     font-size: 1rem;
 }
+.spanBtn {
+    margin-left: .3rem;
+}
 
+@media (max-width: 1200px) {
+    .modal{
+        width: 50vw;
+    }
+}
+@media (max-width: 700px) {
+    .input-cont input {
+        font-size: .9rem;
+    }
+    .input-cont textarea {
+        font-size: .9rem;
+    }
+    .modal{
+        width: 80vw;
+    }
+    .btnModal {
+        font-size: .9rem;
+    }
+}
+@media (max-width: 576px) {
+    .btnAgregar {
+        font-size: .9rem;
+    }
+}

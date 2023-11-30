@@ -29,7 +29,7 @@ function App() {
         <div className='main'>
           <Header />
           <div className='controls'>
-            <input type="text" placeholder='Busca por nombre o descripción' value={searchString} onChange={handleChangeSearch}/>
+            <input type="text" placeholder='Busca por nombre o descripción' value={searchString} onChange={handleChangeSearch} className='inputBuscar'/>
             <TaskForm addTask={addTask}/>
           </div>
           <TaskList tasks={searchedTasks} deleteTask={deleteTask}/>

@@ -23,7 +23,10 @@ const TaskForm = ({addTask}) => {
     }
   return (
     <div>
-        <button onClick={handleOpenModal} className='btnAgregar btnBlueBg'><CgAddR /> Agregar</button>
+        <button onClick={handleOpenModal} className='btnAgregar btnBlueBg'>
+            <CgAddR />
+            <span className='spanBtn'>Agregar</span>
+        </button>
             {
                 openModal
                 &&
