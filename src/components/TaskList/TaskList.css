@@ -1,6 +1,15 @@
 .tasklist {
-    margin-top: 50px;
+    margin-top: 3.5rem;
 }
 .whitouthTask {
     color: #fff;
+}
+
+@media (max-width: 576px) {
+    .whitouthTask {
+        font-size: 1.2rem;
+    }
+    .tasklist {
+        margin-top: 1.2rem;
+    }
 }

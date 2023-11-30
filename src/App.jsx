@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './App.css'
 import { TaskForm, TaskList } from './components'
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -35,6 +36,7 @@ function App() {
           <TaskList tasks={searchedTasks} deleteTask={deleteTask}/>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

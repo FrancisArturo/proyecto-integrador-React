@@ -26,9 +26,9 @@
 
 @media (max-width: 576px) {
     .btnFinish {
-        font-size: .8rem;
+        font-size: .9rem;
     }
     .taskContainer{
-        font-size: .8rem;
+        font-size: .9rem;
     }
 }
